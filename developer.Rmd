@@ -53,11 +53,30 @@ TODO write.
 
 ### What is Git?
 
-TODO write.
+Git is a version control system that allows developers to track changes in their code over time. It's like a time machine for your project files, enabling you to save different versions (called "commits") of your code. Each commit records what changes were made, by whom, and when, making it easy to revert back to older versions if something goes wrong with the current code.
+
+This is a breakdown of key features and concepts in Git:
+Repository (Repo): This is where all your project’s files and their history are stored. It can be located on your computer (local repository) or on a remote server (remote repository).
+Commit: A commit is like a snapshot of your project at a specific point in time. When you make changes to your files, you 'commit' these changes, which saves a record of what was altered, allowing you to track the evolution of your project.
+Branch: Branches allow you to create separate versions of your project within the same repository. You might use a branch to develop a new feature while keeping the main project (usually called the "master" or "main" branch) stable.
+Merge: When you've finished working in a branch, you can merge your changes back into the main branch. This combines the histories of both branches, integrating the new features or changes into the main project.
+Pull: Pulling refers to downloading changes from a remote repository to your local one. This is useful when working in teams, as it lets you see and integrate the changes made by others.
+Push: Pushing refers to uploading your local repository changes to a remote repository. This is how you share your work with others or back up your current state to a remote location.
+Using Git, multiple developers can work on the same project simultaneously without interfering with each other’s work, as they can work in different branches and merge changes only when ready. This collaborative feature, along with the ability to track every change, makes Git an essential tool for modern software development.
+
 
 ### What is a Pull Request?
 
-TODO write.
+A Pull Request (PR), also known as a Merge Request in some systems like GitLab, is a feature used in Git repositories that lets developers notify team members about changes they've pushed to a branch in a repository on platforms like GitHub, Bitbucket, or GitLab. Essentially, it's a request to review and then merge this branch into another branch, typically the main project branch.
+Here's how it works in simple terms:
+Branch Creation: First, a developer creates a branch from the main codebase to work on a new feature, a bug fix, or any updates. This separation ensures that the main codebase remains unaffected until the new changes are reviewed and approved.
+Making Changes and Committing: The developer makes necessary changes in this new branch, commits these changes, and pushes the branch to a remote repository.
+Opening a Pull Request: Once the branch is updated on the remote repository, the developer opens a pull request. This PR is essentially a request to the rest of the team to review the changes made in the branch before it gets merged into the main branch.
+Review and Discussion: Team members review the changes, discuss potential improvements, and may request further changes if needed. This process is crucial for maintaining code quality and ensuring that the integration aligns with the project's overall direction.
+Approval and Merge: After the changes are reviewed and approved by the necessary team members or according to the project's guidelines, the pull request can be merged. This means that the changes in the branch will be integrated into the target branch, usually the main or master branch.
+Closure and Cleanup: Once merged, the pull request is closed, and it's common to delete the branch to keep the repository clean and manageable.
+Pull Requests are a vital part of the collaborative development process, enabling transparency, improving code quality, and helping manage contributions to a project efficiently. They facilitate a peer review system which is beneficial for both team cohesion and project integrity.
+
 
 ### Using RStudio to Prepare a Pull Request
 
